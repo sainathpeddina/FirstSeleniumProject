@@ -88,6 +88,7 @@ public class RedBusTest {
 			Thread.sleep(10000);
 			System.out.println("After Entering Details of passenger : " + driver.getTitle());
 			Thread.sleep(3000);
+			System.out.println("successfully closing the window");
 			driver.close();
 
 		}
