@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- beforeSuite and afterSuite always run before and after the suite begins -->
+	<test name="Small Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGBase" />
+			<class name="TestNGAnnotationClassTest.testNGCar" /> <!-- always starts with package name -->
+			<class name="TestNGAnnotationClassTest.testNGBike" />
+
+		</classes>
+	</test>
+	<test name="Large Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGBase" />
+			<class name="TestNGAnnotationClassTest.testNGTruck" />
+		</classes>
+	</test>
+
+</suite> 

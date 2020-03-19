@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- beforeMethod and afterMethod always run before and after the each test 
+		in class begins -->
+	<!-- beforeMethod and afterMethod & beforeClass and afterClass is specific 
+		to class file level , where as beforeTest and afterTest & beforeSuite and 
+		afterSuite in specific to testNG.xml level -->
+	<test name="Small Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGBase" />
+		</classes>
+	</test>
+
+</suite> 

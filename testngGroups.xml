@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="samll Veicles">
+		<groups>
+			<run>
+				<include name="Tyre"></include><!-- include runs which has a group name 
+					as tyre -->
+	<!-- <exclude name="Tyre"></exclude> exclude runs except which has a group name 
+		as tyre -->
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGCar" /> <!-- always starts with package name -->
+			<class name="TestNGAnnotationClassTest.testNGBike" />
+			<class name="TestNGAnnotationClassTest.testNGTruck" />
+		</classes>
+	</test>
+
+</suite> 

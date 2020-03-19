@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- suite level parameterisation , is applicable to all test moduels : 
+		samll Veicles , large Veicles , base Class -->
+	<parameter name="url" value="www.google.com"></parameter>
+
+	<test name="samll Veicles">
+		<!-- test module level parameterisation , is applicable to all classes 
+			under samll Veicles : testNGCar , testNGBike -->
+		<parameter name="small" value="www.small.com"></parameter>
+		<classes>
+			<class name="TestNGParamerisationClassTest.testNGCar" /> <!-- always starts with package name -->
+			<class name="TestNGParamerisationClassTest.testNGBike" />
+		</classes>
+	</test>
+
+	<test name="large Veicles">
+		<!-- test module level parameterisation , is applicable to all classes 
+			under large Veicles : testNGCar , testNGBike -->
+		<parameter name="large" value="www.large.com"></parameter>
+		<classes>
+			<class name="TestNGParamerisationClassTest.testNGTruck" />
+		</classes>
+	</test>
+
+	<test name="base Class">
+		<!-- test module level parameterisation , is applicable to all classes 
+			under base Class : testNGBase -->
+		<parameter name="base" value="www.base.com"></parameter>
+		<classes>
+			<class name="TestNGParamerisationClassTest.testNGBase" />
+		</classes>
+	</test>
+
+</suite> 

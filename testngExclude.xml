@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="samll Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGCar" /> <!-- always starts with package name -->
+			<class name="TestNGAnnotationClassTest.testNGBike">
+				<methods>
+					<exclude name="bikeEngine" />
+				</methods>
+			</class>
+
+			<!-- if we want to skip this method for this class , we can write enabled 
+				= false or we can * add this as exclude method in testNG.xml for particular 
+				class <class name="TestNGAnnotationClassTest.testNGBike"> <methods> <exclude name = 
+				"bikeEngine" /> </methods> </class> -->
+
+
+		</classes>
+	</test>
+
+	<test name="large Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGTruck" >
+			<methods> <exclude name = "truck.*" 
+				/> </methods> </class>
+			<!-- if we want to skip the methods which starts with bike word for this 
+				class , we can add this as exclude method in testNG.xml for particular class 
+				<class name="TestNGAnnotationClassTest.testNGTruck"> <methods> <exclude name = "truck.*" 
+				/> </methods> </class> -->
+		</classes>
+	</test>
+
+</suite> 

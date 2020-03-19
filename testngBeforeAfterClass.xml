@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- beforeClass and afterClass always run before and after the Class begins -->
+	<test name="Small Veicles">
+		<classes>
+			<class name="TestNGAnnotationClassTest.testNGBase" />
+			<!-- <class name="TestNGAnnotationClassTest.testNGCar" />
+			<class name="TestNGAnnotationClassTest.testNGBike" />
+			<class name="TestNGAnnotationClassTest.testNGTruck" /> -->
+
+		</classes>
+
+	</test>
+
+</suite> 
